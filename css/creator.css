@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400&family=Oregano:ital@0;1&display=swap');
+
+header .logo {
+    color: #333;
+}
+
+header .navigation .navigation-items a {
+    color: #333;
+}
+
+header .navigation .navigation-items a:before {
+    background: #9b9b9b3a;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 54px 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.creator-heading span {
+    font-family: 'Oregano', cursive;
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.creator-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ******************* Creator ********************** */
+
+.creator-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator-container .creator {
+    height: 250px;
+    display: grid;
+    overflow: visible;
+    gap: 18px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.creator-container .creator-2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.creator .creator-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.creator .creator-video video {
+    height: 250px;
+    width: auto;
+}
+
+.creator-3 .creator-video video {
+    height: 180px;
+    width: auto;
+}
+
+
+/* ******************************************** Media Queries ********************************************* */
+@media(max-width:1169px) {
+    section {
+        padding: 48px 72px;
+    }
+
+    .creator-text p {
+        font-size: 1.01em;
+    }
+}
+
+@media(max-width:989px) {
+    .creator-3 .creator-video {
+        margin-left: 15px;
+    }
+    .creator-3 .creator-video video {
+        height: 130px;
+        width: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    section {
+        padding: 30px 12px;
+    }
+    .creator {
+        margin-bottom: 60px;
+    }
+    .creator-heading span {
+        font-size: 1.3em;
+    }
+    .creator-text p {
+        font-size: 1em;
+    }
+
+    .creator-container .creator {
+        height: 180px;
+        gap: 6px;
+    }
+
+    .creator .creator-video video {
+        height: 121px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 541px) {
+    .creator {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 473px) {
+    .creator {
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 387px) {
+    .creator {
+        margin-bottom: 250px;
+    }
+}
+
+@media (max-width: 307px) {
+    .creator {
+        margin-bottom: 310px;
+    }
+}

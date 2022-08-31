@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    /* background: url(background.jpg); */
+    /* background-size: cover; */
+    /* background: grey; */
+    background: rgb(200, 227, 253);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .logo {
+    color: #333;
+}
+
+header .navigation .navigation-items a {
+    color: #333;
+}
+
+header .navigation .navigation-items a:before {
+    background: #9b9b9b3a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid black; */
+}
+
+
+.container1{
+    /* margin: 8% 6% 0% 44%;
+    padding: 0% 0% 0% 2%; */
+    background-color: aliceblue;
+}
+.container2{
+    /* margin: 3% 6% 0% 44%;
+    padding: 0% 0% 0% 0%; */
+    background-color: aliceblue;
+
+}
+.container3
+{
+    margin: 30px 0px;
+    /* position: absolute;
+    left:50%;
+    top:50%; */
+    /* margin:0% 0% 0% -25%;
+    padding:0% 0% 0% 0%; */
+    /* transform: translate(-50%,-50%); */
+}
+.box
+{
+    min-width: 400px;
+    background: white;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
+
+}
+.box::before{
+    content: '';
+    position:absolute;
+    height:90%;
+    width:110%;
+    
+    left:-5%;
+    top:-5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow:0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+    border-radius:60px;
+    z-index:-1;
+}
+h1
+{
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(21, 6, 99);
+    font-size: 36px;
+    padding: 30px 0;
+}
+.content
+{
+    padding: 0 40px;
+}
+.input
+{
+    background: white;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.input label
+{
+    display: block;
+    font-size:20px;
+    font-weight:700;
+    color:rgb(161, 33, 33);
+    margin-bottom: 30px;
+}
+.input input
+{
+    outline:none;
+    border:none;
+    border-bottom:1px solid rgb(0, 170, 255);
+    width:60%;
+    text-align: center;
+    font-size:28px;
+    /* margin: 0% 0% 5% 0%; */
+    margin: 0% 0% 0% 0%;
+    padding:0% 0% 0% 0%;
+}
+button#calculate
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    background: rgb(128, 128, 223);
+    font-size:16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 90%;
+    outline:none;
+    border:none;
+    transition: .2s ease;
+}
+button#calculate:hover
+{
+    background: rgb(24, 24, 217);
+}
+.result
+{
+    padding:30px 20px;
+}
+.result p{
+    font-weight:600;
+    font-size:22px;
+    color:black;
+    margin-bottom:15px;
+}
+.result #result
+{
+    font-size:36px;
+    font-weight:900;
+    color:rgb(60, 114, 233);
+    background-color: rgb(204, 209, 210);
+    display:inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom:25px;
+}
+#comment
+{
+    color:rgb(121, 121, 223);
+    font-weight: 800;
+}
+
+
+.section-1 {
+    /* border: 5px solid black; */
+    padding: 54px 10px;
+}
+
+.section-2 {
+    padding: 30px 55px;
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .container1 {
+    background-color: aliceblue;
+    padding: 30px 45px;
+    margin-bottom: 33px;
+    border-radius: 28px;
+}
+
+.section-2 .container2 {
+    background-color: aliceblue;
+    padding: 30px 45px;
+    margin-bottom: 33px;
+    border-radius: 28px;
+}
+
+
+@media (max-width: 610px) {
+    .section-2 {
+        padding: 10px 6px;
+    }
+
+    .section-2 .container1 {
+        padding: 15px 26px;
+    }
+
+    .section-2 .container2 {
+        padding: 15px 26px;
+    }
+}
+
+@media (max-width: 420px) {
+    .section-1 {
+        padding: 1px 3px;
+    }
+}

@@ -1,0 +1,139 @@
+header .logo {
+    color: #333;
+}
+
+header .navigation .navigation-items a {
+    color: #333;
+}
+
+header .navigation .navigation-items a:before {
+    background: #9b9b9b3a;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url("../resources/images/background.jpg"); */
+    background: rgb(211, 239, 255);
+}
+
+form-control,
+.form-select,
+.card,
+.btn {
+    border-radius: 15px;
+
+}
+
+.calorie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 102px;
+}
+
+.CalculateForm {
+    /* width: 100vh;
+    height: 100vh; */
+    /* margin: 0% 0% 0% 25%; */
+    /* width: 500px; */
+    padding: 0% 0% 0% 0%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.form-control,
+.form-select {
+    background: none;
+    color: #fff;
+    background-color: rgb(115, 0, 255);
+    background-color: #1768f5;
+}
+
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center !important;
+    background-size: 16px 12px !important;
+
+}
+
+input[type=checkbox],
+input[type=radio] {
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    top: 0;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+input[type=checkbox] {
+    border-radius: 3px;
+}
+
+input[type=radio] {
+    border-radius: 100%;
+}
+
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+    border: none;
+}
+
+input[type=checkbox]:checked:after,
+input[type=radio]:checked:after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    left: 0;
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    color: rgb(7, 7, 7);
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+h5 {
+    color: #333;
+}
+label {
+    color: #333;
+}
+@media (max-width: 1040px) {
+    .calorie {
+        padding: 12px 70px;
+    }
+
+}
+
+@media (max-width: 862px) {
+    .calorie {
+        padding: 7px 19px;
+    }
+}
+
+@media (max-width: 787px) {
+    .calorie {
+        padding: 1px 7px;
+    }
+}
+
+}

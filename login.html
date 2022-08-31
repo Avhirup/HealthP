@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALTH+ || One Step Health Solution</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="resources/icons/HEALTH4.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">health+</a>
+        <div class="menu-btn"></div>
+
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="index.html">Explore</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>  
+    </header>
+    <section class="home">
+        <video src="resources/videos/UC.mp4" autoplay muted loop class="video-slide active"></video>
+        <div class="content active">
+            <h1>Under<br><span>Construction</span></h1>
+            
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/Avhirup"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="col-1">
+                <h3>Useful Links</h3>
+                <a href="creator.html">Creators</a>
+                <a href="index.html">Our Vision</a>
+                <a href="bmi.html">Calculate BMI</a>
+                <a href="index.html">Explore</a>
+            </div>
+            <div class="col-2">
+                <h3>Notify Me</h3>
+                <form>
+                    <input type="email" placeholder="Valid Email Address" required>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="col-3">
+                <h3>Contact</h3>
+                <p>New Town Rd, Action Area III,<br> Newtown, Kolkata, INDIA</p>
+                <div class="media-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/Avhirup"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>
+            Copyright &copy; 2022 - All rights reserved
+        </p>
+    </div>
+
+    <script>
+        // javascript for responsive navigation menu 
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        menuBtn.addEventListener("click", ()=>{
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALTH+ || Calculate BMI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="resources/icons/HEALTH4.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bmi.css">
+</head>
+
+<body>
+
+
+    <!-- *********************************** Navbar ************************************************ -->
+    <header>
+        <a href="index.html" class="logo">health+</a>
+        <div class="menu-btn"></div>
+
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="creator.html">Creators</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ******************************** main sectino BMI calculator ******************************** -->
+    <div class="container">
+
+        <!-- ********************** 1st section ************************** -->
+        <div class="section-1">
+            <div class="container3">
+                <div class="box">
+                    <h1>BMI Calculator</h1>
+                    <div class="content">
+                        <div class="input">
+                            <label for="height">Height (cm)</label>
+                            <input type="number" name="height" id="height">
+
+                            <label for="weight">Weight (kg)</label>
+                            <input type="number" name="weight" id="weight">
+                        </div>
+
+                        <button id="calculate">Calculate BMI</button>
+                    </div>
+
+                    <div class="result">
+                        <p>Your BMI is</p>
+                        <div id="result">00.00</div>
+                        <p class="comment">Comment : You are <span id="comment">overweight</span> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***************************** 2nd section ****************************** -->
+        <div class="section-2">
+
+            <div class="container1 bg-light mt-5 p-3">
+                <div class="ml-2 p-2" style="background-color: rgb(91 246 232);">
+                    <b>BMI and health</b>
+                </div>
+                <ul>
+                    <li>
+                        <h5>Body fat is relevant, not body mass</h5>
+                    </li>
+                    <p>As far as health is concerned, excess body fat is negative. In contrast, an above-average muscle mass
+                        is more likely to be positive.</p>
+                    <p>The BMI does not distinguish between body fat and fat-free mass. Yet statistics show that the body
+                        mass index of about 73 percent of the people is quite a significant indicator of the body fat
+                        percentage.</p>
+                    <p>Thus, in three out of four cases, the BMI seems to have a significant relevance to health and in one
+                        out of four cases it does not seem to have any.</p>
+                    <li>
+                        <h5>Body fat percentage vs. BMI</h5>
+                    </li>
+                    <p>Despite its high relevance to health, the body fat percentage has its shortcomings. Scales for
+                        measuring body fat are simple to use but imprecise; the more accurate methods are very complicated
+                        and require skilled personnel.</p>
+                    <p>The BMI, in contrast, can be calculated from two simple measurements which are reliable in most
+                        cases.</p>
+                    <p>This seems to be the main reason why the BMI is still the most widely used value for estimating the
+                        body fat.</p>
+                </ul>
+            </div>
+    
+            <div class="container2 bg-light mt-5 p-3">
+                <div class="ml-2 p-5" style="background-color: rgb(125 243 158); color: rgb(0, 0, 0)">
+                    <b>Limitations of BMI</b>
+                </div>
+                <p class="ml-3  p-2">Although BMI is a widely used and useful indicator of healthy body weight, it does have
+                    its limitations. BMI is only an estimate that cannot take body composition into account. Due to a wide
+                    variety of body types as well as distribution of muscle, bone mass, and fat, BMI should be considered
+                    along with other measurements rather than being used as the sole method for determining a person's
+                    healthy body weight.</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- ************************************** Footer ************************************************ -->
+    <footer>
+        <div class="footer">
+            <div class="col-1">
+                <h3>Useful Links</h3>
+                <a href="creator.html">Creators</a>
+                <a href="index.html">Our Vision</a>
+                <a href="bmi.html">Calculate BMI</a>
+                <a href="index.html">Explore</a>
+            </div>
+            <div class="col-2">
+                <h3>Subscribe Us</h3>
+                <form>
+                    <input type="email" placeholder="Valid Email Address" required>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="col-3">
+                <h3>Contact</h3>
+                <p>New Town Rd, Action Area III,<br> Newtown, Kolkata, INDIA</p>
+                <div class="media-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/Avhirup"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>
+            Copyright &copy; 2022 - All rights reserved
+        </p>
+    </div>
+
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-caret-up"></i>
+    </a>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/bmi.js"></script>
+
+
+</body>
+
+</html>
